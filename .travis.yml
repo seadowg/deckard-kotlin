@@ -16,7 +16,7 @@ android:
     - '.+'
 
 script:
-    - ./gradlew clean test
+  - ./gradlew test
 
 notifications:
   email: false
@@ -26,4 +26,3 @@ sudo: false
 cache:
   directories:
     - $HOME/.gradle
-
