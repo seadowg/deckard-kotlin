@@ -1,6 +1,5 @@
 # Deckard
-[![Build Status](https://travis-ci.org/robolectric/deckard.svg?branch=master)](https://travis-ci.org/robolectric/deckard)
-[![Circle CI](https://circleci.com/gh/robolectric/deckard.svg?style=svg)](https://circleci.com/gh/robolectric/deckard)
+[![Build Status](https://travis-ci.org/seadowg/deckard-kotlin.svg?branch=master)](https://travis-ci.org/seadowg/deckard-kotlin)
 
 Deckard is the simplest possible Android application project that uses Robolectric for testing and Gradle to build. It has one Activity and a single Robolectric test of that Activity.
 
