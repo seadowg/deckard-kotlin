@@ -2,7 +2,7 @@
 [![Build Status](https://travis-ci.org/robolectric/deckard.svg?branch=master)](https://travis-ci.org/robolectric/deckard)
 [![Circle CI](https://circleci.com/gh/robolectric/deckard.svg?style=svg)](https://circleci.com/gh/robolectric/deckard)
 
-Deckard is the simplest possible Android application project that uses Robolectric/Espresso for testing and Gradle to build. It has one Activity, a single Robolectric test of that Activity, and an Espresso test of that Activity.
+Deckard is the simplest possible Android application project that uses Robolectric for testing and Gradle to build. It has one Activity and a single Robolectric test of that Activity.
 
 Deckard imports easily into the latest editions of Android Studio with minimal setup.
 
@@ -22,22 +22,17 @@ android update sdk --all --no-ui --filter extra-android-m2repository
 ```
 3. Download Deckard from GitHub:
 ```bash
-wget https://github.com/robolectric/deckard/archive/master.zip
+wget https://github.com/seadowg/deckard-kotlin/archive/master.zip
 unzip master.zip
-mv deckard-master my-new-project
+mv deckard-kotlin-master my-new-project
 ```
 4. Create a `local.properties` [file](http://tools.android.com/tech-docs/new-build-system/user-guide#TOC-Simple-build-files) in the root of the project that points to
 5. In the project directory you should be able to run the Robolectric tests:
 ```bash
 ./gradlew clean test
 ```
-6. You should also be able to run the Espresso tests:
-```bash
-./gradlew clean connectedAndroidTest
-```
-Note: Make sure to start an Emulator or connect a device first so the test has something to connect to.
-7. Change the names of things from 'Deckard' to whatever is appropriate for your project. Package name, classes, build.gradle, and the AndroidManifest are good places to start.
-8. Build an app. Win.
+6. Change the names of things from 'Deckard' to whatever is appropriate for your project. Package name, classes, build.gradle, and the AndroidManifest are good places to start.
+7. Build an app. Win.
 
 ## Android Studio Support
 
@@ -48,11 +43,6 @@ Deckard is designed to run against Android Studio 1.5.1 with [Unit Testing suppo
 Import the project into Android Studio by selecting 'Import Project' and selecting the project's `build.gradle`. When prompted, you can just pick the default gradle wrapper.
 
 ### Running the Robolectric Test
-To run Robolectric tests (example can be found in DeckardActivityTest) open Studio's
+To run Robolectric tests (example can be found in `DeckardActivityTest`) open Studio's
 "Build Variants" pane and change the "Test Artifact" to "Unit Tests". You can then run
 Robolectric tests using the JUnit test runner.
-
-### Running the Espresso Test
-To run Espresso tests (example can be found in DeckardEspressoTest) open Studio's
-"Build Variants" pane and change the "Test Artifact" to "Android Instrumentation Tests".
-You can then run Espresso tests using the Android test runner.
