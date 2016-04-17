@@ -1,7 +1,7 @@
 # Deckard
 [![Build Status](https://travis-ci.org/seadowg/deckard-kotlin.svg?branch=master)](https://travis-ci.org/seadowg/deckard-kotlin)
 
-Deckard is the simplest possible Android application project that uses Robolectric for testing and Gradle to build. It has one Activity and a single Robolectric test of that Activity.
+Deckard is the simplest possible Kotlin Android application project that uses Robolectric for testing and Gradle to build. It has one Activity and a single Robolectric test of that Activity.
 
 Deckard imports easily into the latest editions of Android Studio with minimal setup.
 
