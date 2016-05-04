@@ -12,7 +12,7 @@ Deckard imports easily into the latest editions of Android Studio with minimal s
 To start a new Android project:
 
 1. Install [Android Studio 2.1](http://developer.android.com/sdk/index.html).
-1. Download Deckard as a zip [here](https://github.com/robolectric/deckard/archive/master.zip) and then extract it on your dev machine.
+1. Download Deckard-Kotlin as a zip [here](https://github.com/seadowg/deckard-kotlin/archive/master.zip) and then extract it on your dev machine.
 
 1. Import the template into Android Studio by clicking "Import project" and selecting the project directory.
 
