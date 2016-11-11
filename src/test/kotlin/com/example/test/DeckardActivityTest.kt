@@ -6,13 +6,13 @@ import com.example.activity.DeckardActivity
 import org.junit.Test
 import org.junit.runner.RunWith
 import org.robolectric.Robolectric
-import org.robolectric.RobolectricGradleTestRunner
 import org.robolectric.annotation.Config
 
 import org.junit.Assert.assertTrue
+import org.robolectric.RobolectricTestRunner
 
-@RunWith(RobolectricGradleTestRunner::class)
-@Config(constants = BuildConfig::class, sdk = intArrayOf(21))
+@RunWith(RobolectricTestRunner::class)
+@Config(constants = BuildConfig::class, sdk = intArrayOf(23))
 class DeckardActivityTest {
 
     @Test
