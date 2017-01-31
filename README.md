@@ -14,7 +14,7 @@ Setup
 
 To start a new Android project:
 
-1.	Install [Android Studio 2.2](http://developer.android.com/sdk/index.html).
+1.	Install [Android Studio 2.2.3](http://developer.android.com/sdk/index.html).
 2.	Download Deckard-Kotlin as a zip [here](https://github.com/seadowg/deckard-kotlin/archive/master.zip) and then extract it on your dev machine.
 
 3.	Import the template into Android Studio by clicking "Import project" and selecting the project directory.
