@@ -1,7 +1,7 @@
 Deckard
 =======
 
-[![Build Status](https://travis-ci.org/seadowg/deckard-kotlin.svg?branch=master)](https://travis-ci.org/robolectric/deckard)
+[![Build Status](https://travis-ci.org/seadowg/deckard-kotlin.svg?branch=master)](https://travis-ci.org/seadowg/deckard-kotlin)
 
 Deckard is the simplest possible Kotlin Android application project that uses Robolectric for testing and Gradle to build. It has one Activity and a single Robolectric test of that Activity.
 
@@ -14,7 +14,7 @@ Setup
 
 To start a new Android project:
 
-1.	Install [Android Studio 2.2.3](http://developer.android.com/sdk/index.html).
+1.	Install [Android Studio 2.3](http://developer.android.com/sdk/index.html).
 2.	Download Deckard-Kotlin as a zip [here](https://github.com/seadowg/deckard-kotlin/archive/master.zip) and then extract it on your dev machine.
 
 3.	Import the template into Android Studio by clicking "Import project" and selecting the project directory.
