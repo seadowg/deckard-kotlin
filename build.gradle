@@ -1,3 +1,4 @@
+def FAST = project.hasProperty('FAST')
 def version = [
         "support": "25.3.1",
         "retrofit" : "2.2.0",
@@ -45,7 +46,7 @@ android {
     buildToolsVersion "25.0.2"
 
     defaultConfig {
-        minSdkVersion 21
+        minSdkVersion (FAST ? 21 : 17)
         targetSdkVersion 25
         versionCode 1
         versionName "1.0.0"
@@ -159,4 +160,12 @@ dependencies {
     testCompile "org.assertj:assertj-core:2.6.0"
 //    androidTestCompile("com.squareup.assertj:assertj-android:1.1.1")
 
+}
+
+if (FAST) {
+    tasks.whenTaskAdded { task ->
+        if (task.name.startsWith("lint")) {
+            task.enabled = false
+        }
+    }
 }
