@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="login_eula">By signing up, I agree to Airbnb\'s Terms of Service, Payments Terms of
+    Service, Privacy Policy, Guest Refund Policy
+  </string>
+</resources>

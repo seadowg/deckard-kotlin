@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="com.example">
-    <application android:name="DeckardApplication">
-        <activity android:name=".activity.DeckardActivity" android:screenOrientation="portrait">
+    <application android:name="DeckardApplication" android:theme="@style/Theme.AppCompat"
+    >
+        <activity android:name=".activity.DeckardActivity"
+            android:screenOrientation="portrait"
+        >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>

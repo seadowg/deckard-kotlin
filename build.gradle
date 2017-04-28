@@ -72,8 +72,7 @@ dependencies {
     compile "com.android.support:support-v4:${version.support}"
     compile "com.android.support:appcompat-v7:${version.support}"
     compile "com.android.support:preference-v7:${version.support}"
-    compile "com.android.support.constraint:constraint-layout:1.0.0-beta1"
-//    compile "com.android.support:multidex:1.0.1"
+    //    compile "com.android.support:multidex:1.0.1"
 
     compile "com.android.support:design:${version.support}"
     compile "com.android.support:percent:${version.support}"
@@ -160,6 +159,7 @@ dependencies {
     testCompile "org.assertj:assertj-core:2.6.0"
 //    androidTestCompile("com.squareup.assertj:assertj-android:1.1.1")
 
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
 }
 
 if (FAST) {
