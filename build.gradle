@@ -42,6 +42,9 @@ apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 
 android {
+
+    dataBinding.enabled = true
+
     compileSdkVersion 25
     buildToolsVersion "25.0.2"
 
@@ -50,7 +53,7 @@ android {
         targetSdkVersion 25
         versionCode 1
         versionName "1.0.0"
-        applicationId "com.example"
+        applicationId "com.github.jmfayard.okandroid"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
 
@@ -61,6 +64,10 @@ android {
     sourceSets {
         main.java.srcDirs += 'src/main/kotlin'
         test.java.srcDirs += 'src/test/kotlin'
+    }
+
+    packagingOptions {
+        exclude 'META-INF/rxjava.properties'
     }
 }
 
@@ -84,7 +91,7 @@ dependencies {
     compile "io.reactivex.rxjava2:rxjava:${version.rxjava2}"
 
     // https://github.com/ReactiveX/RxAndroid
-    compile "io.reactivex.rxjava2:rxandroid:${version.rxandroid}"
+//    compile "io.reactivex.rxjava2:rxandroid:${version.rxandroid}"
 
     // https://github.com/ReactiveX/RxKotlin
     compile "io.reactivex.rxjava2:rxkotlin:${version.rxkotlin2}"
@@ -160,6 +167,21 @@ dependencies {
 //    androidTestCompile("com.squareup.assertj:assertj-android:1.1.1")
 
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
+
+
+    // Magellan, the Simplest Navigation for Android
+    // https://github.com/wealthfront/magellan
+    def magellanVersion = '1.0.0'
+    compile 'com.wealthfront:magellan:' + magellanVersion
+    compile 'com.wealthfront:magellan-support:' + magellanVersion
+    compile 'com.wealthfront:magellan-rx:' + magellanVersion
+
+    kapt "com.android.databinding:compiler:2.3.0"
+
+}
+
+kapt {
+    generateStubs = true
 }
 
 if (FAST) {
