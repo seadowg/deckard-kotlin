@@ -1,0 +1,16 @@
+<resources>
+  <string name="login_eula">By signing up, I agree to Airbnb\'s Terms of Service, Payments Terms of
+    Service, Privacy Policy, Guest Refund Policy
+  </string>
+  <string name="app_name">OK Android</string>
+  <string name="detail_view_text">This is a detail view</string>
+  <string name="default_transition">Default transition</string>
+  <string name="circular_reveal_transition">Circular reveal transition</string>
+  <string name="show_transition">Show transition</string>
+  <string name="show_now_transition">Show now transition</string>
+  <string name="enter_your_phone">Enter your phone</string>
+  <string name="send_sms">Send SMS</string>
+  <string name="register_phone">Enter your phone number</string>
+  <string name="verfiy_tryagain">Not received? You can try again</string>
+  <string name="verify_pin">Enter the PIN</string>
+</resources>

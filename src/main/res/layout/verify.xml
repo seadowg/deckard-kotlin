@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+  <LinearLayout
+      android:orientation="vertical"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+    <TextView
+        android:text="Enter the PIN we just sent to you by SMS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:id="@+id/textView2"/>
+    <TextView
+        android:text="@string/verify_pin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:id="@+id/textView"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/pin" android:hint="PIN"/>
+    <Button
+        android:text="Verify number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:id="@+id/verfiyPin"/>
+    <TextView
+        android:text="@string/verfiy_tryagain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:id="@+id/textView3"/>
+    <Button
+        android:text="@string/send_sms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:id="@+id/verifyResendSMS"/>
+  </LinearLayout>
+</layout>

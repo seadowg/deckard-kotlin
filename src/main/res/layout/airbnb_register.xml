@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+  <TextView
+      android:text="Logo"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content" app:layout_constraintTop_toTopOf="parent"
+      android:layout_marginTop="25dp"
+      android:id="@+id/labelLogo" android:layout_marginLeft="16dp"
+      app:layout_constraintLeft_toLeftOf="parent"/>
+  <TextView
+      android:text="Welcome to AirBNB"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content" tools:layout_editor_absoluteY="69dp"
+      android:layout_marginLeft="16dp" app:layout_constraintLeft_toLeftOf="parent"
+      android:id="@+id/label_welcome" android:layout_marginStart="16dp"
+      android:layout_marginRight="16dp" app:layout_constraintRight_toRightOf="parent"
+      android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+      app:layout_constraintHorizontal_bias="0.0"/>
+  <Button
+      android:text="Continue with Facebook"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:id="@+id/btnFacebook"
+      android:layout_marginLeft="16dp" app:layout_constraintLeft_toLeftOf="parent"
+      android:layout_marginRight="16dp" app:layout_constraintRight_toRightOf="parent"
+      app:layout_constraintHorizontal_bias="0.0" android:layout_marginTop="24dp"
+      app:layout_constraintTop_toBottomOf="@+id/label_welcome"/>
+  <Button
+      android:text="Create account"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent"
+      android:id="@+id/btnRegister" android:layout_marginTop="8dp"
+      app:layout_constraintTop_toBottomOf="@+id/btnFacebook"
+      app:layout_constraintHorizontal_bias="0.503" android:layout_marginLeft="16dp"
+      android:layout_marginRight="16dp"/>
+  <TextView
+      android:text="More options"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      tools:layout_editor_absoluteX="33dp"
+      android:id="@+id/btnMore" android:layout_marginTop="24dp"
+      app:layout_constraintTop_toBottomOf="@+id/btnRegister"/>
+  <TextView
+      android:text="@string/login_eula"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:id="@+id/textView4"
+      android:layout_marginRight="16dp"
+      app:layout_constraintRight_toRightOf="parent" android:layout_marginLeft="16dp"
+      app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintBottom_toBottomOf="parent" android:layout_marginBottom="17dp"
+      android:layout_marginTop="16dp" app:layout_constraintTop_toBottomOf="@+id/btnMore"
+      app:layout_constraintVertical_bias="0.945"/>
+</android.support.constraint.ConstraintLayout>
