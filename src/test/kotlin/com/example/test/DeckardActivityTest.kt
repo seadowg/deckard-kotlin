@@ -12,7 +12,7 @@ import org.junit.Assert.assertTrue
 import org.robolectric.RobolectricTestRunner
 
 @RunWith(RobolectricTestRunner::class)
-@Config(constants = BuildConfig::class, sdk = intArrayOf(23))
+@Config(constants = BuildConfig::class, sdk = intArrayOf(25))
 class DeckardActivityTest {
 
     @Test
