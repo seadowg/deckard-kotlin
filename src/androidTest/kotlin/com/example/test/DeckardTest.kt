@@ -15,7 +15,7 @@ import org.junit.runner.RunWith
 class DeckardTest {
 
     @get:Rule
-    val mActivityRule = ActivityTestRule(DeckardActivity::class.java)
+    val activityTestRule = ActivityTestRule(DeckardActivity::class.java)
 
 
     @Test
