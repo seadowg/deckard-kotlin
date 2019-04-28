@@ -1,22 +1,24 @@
 package com.example.test
 
-import com.example.BuildConfig
+import androidx.test.core.app.ActivityScenario
+import androidx.test.ext.junit.runners.AndroidJUnit4
+import com.example.R
 import com.example.activity.DeckardActivity
-
+import org.junit.Assert.assertEquals
 import org.junit.Test
 import org.junit.runner.RunWith
-import org.robolectric.Robolectric
 import org.robolectric.annotation.Config
 
-import org.junit.Assert.assertTrue
-import org.robolectric.RobolectricTestRunner
-
-@RunWith(RobolectricTestRunner::class)
-@Config(constants = BuildConfig::class, sdk = intArrayOf(25))
+@RunWith(AndroidJUnit4::class)
+@Config(sdk = [28])
 class DeckardActivityTest {
 
     @Test
     fun testSomething() {
-        assertTrue(Robolectric.setupActivity(DeckardActivity::class.java) != null)
+        ActivityScenario.launch(DeckardActivity::class.java)!!.use { scenario ->
+            scenario.onActivity { activity ->
+                assertEquals("Hello, Kotlin!", activity.getString(R.string.hello_kotlin))
+            }
+        }
     }
 }
